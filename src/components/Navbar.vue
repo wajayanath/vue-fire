@@ -19,17 +19,17 @@
             <li class="nav-item">
               <router-link to="/about" class="nav-link" href="#">About</router-link>
             </li>
-          
+
           </ul>
           <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0">Get Start</button>
+            <a class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#login">Get Start</a>
           </form>
         </div>
 
      </div>
 </nav>
-    
+
   </div>
 </template>
 
@@ -38,14 +38,17 @@ export default {
   name: "Navbar",
   props: {
     msg: String
+  },
+  components: {
+
   }
 };
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-  @media (min-width: 992px) { 
-    
+  @media (min-width: 992px) {
+
     .navbar.custom-nav{
       padding-top:16px;
       padding-bottom:16px;
